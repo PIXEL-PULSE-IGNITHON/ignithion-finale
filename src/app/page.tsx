@@ -132,7 +132,7 @@ const SdgDetail = ({
   onNavigate: (section: string) => void;
   children: React.ReactNode;
 }) => (
-  <div className="min-h-screen pt-20 bg-[#FCEFF9]">
+  <div className="min-h-screen pt-20 bg-[#f300ba]">
     <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
       <button
         onClick={() => onNavigate("home")}
@@ -179,11 +179,11 @@ export default function HomeApp() {
           <div className="min-h-screen pt-16 bg-[#FCEFF9]">
             {/* Hero Section */}
             <section className="relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#FCEFF9] via-[#D9DD92]/10 to-[#B6DC76]/20"></div>
+              <div className="absolute inset-0 bg-[url('/bg.gif')] bg-cover bg-center"></div>
               <div className="relative px-4 py-20 text-center sm:px-6 lg:px-8 lg:py-32">
                 <div className="mx-auto max-w-4xl">
                   <h1 className="text-5xl font-extrabold tracking-tight sm:text-6xl md:text-7xl">
-                    <span className="bg-gradient-to-r from-[#FA8334] via-[#B6DC76] to-[#D9DD92] bg-clip-text text-transparent">
+                    <span className="bg-white bg-clip-text text-transparent">
                       IGNITHON
                     </span>
                     <br />
@@ -192,7 +192,7 @@ export default function HomeApp() {
                   <p className="mx-auto mt-8 max-w-2xl text-xl text-[#080F0F]/70 leading-relaxed">
                     Harnessing Technology for a Better World. Our mission is to
                     provide innovative{" "}
-                    <span className="font-semibold text-[#FA8334]">
+                    <span className="font-semibold text-white">
                       E-Help solutions
                     </span>{" "}
                     to achieve the UN&apos;s Sustainable Development Goals.
