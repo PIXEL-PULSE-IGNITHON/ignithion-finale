@@ -50,7 +50,7 @@ const Navbar = ({
               className="flex items-center text-2xl font-bold"
             >
               <span className="bg-[#FA8334] bg-clip-text font-bold text-transparent">
-                IGNITHON
+              IGNITHON - PIXEL PORTAL
               </span>
             </button>
           </div>
