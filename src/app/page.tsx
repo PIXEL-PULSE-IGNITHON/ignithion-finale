@@ -132,7 +132,7 @@ const SdgDetail = ({
   onNavigate: (section: string) => void;
   children: React.ReactNode;
 }) => (
-  <div className="min-h-screen pt-20 bg-[#f300ba]">
+  <div className="min-h-screen pt-20 bg-[#FCEFF9]">
     <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
       <button
         onClick={() => onNavigate("home")}
@@ -578,7 +578,7 @@ export default function HomeApp() {
               the knowledge and skills they need to thrive.
             </p>
             <div className="my-5 grid place-content-center">
-              <Link href={"https://daichianoopqualityeducation.vercel.app/"}>
+              <Link href={"https://cleanwater.ignithon.dashutosh.tech/"}>
                 <button
                   className="px-6 py-3 bg-[#FA8334] text-white font-semibold rounded-2xl shadow-md 
                  hover:bg-[#d86c29] hover:scale-105 transition-transform duration-300 flex cursor-pointer"
