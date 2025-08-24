@@ -205,7 +205,7 @@ export default function HomeApp() {
                       Explore Our Goals
                       <ArrowRight className="ml-2 inline h-5 w-5 transition-transform group-hover:translate-x-1" />
                     </button>
-                    <button className="rounded-full border-2 border-[#080F0F]/20 px-8 py-4 text-lg font-semibold text-[#080F0F] transition-all hover:border-[#FA8334] hover:text-[#FA8334]">
+                    <button className="rounded-full border-2 border-[#080F0F]/20 px-8 py-4 text-lg font-semibold text-[#080F0F] transition-all hover:border-white hover:text-white cursor-pointer">
                       Learn More
                     </button>
                   </div>
