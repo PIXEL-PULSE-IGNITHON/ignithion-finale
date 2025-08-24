@@ -12,6 +12,7 @@ import {
   ArrowLeft,
   Menu,
   X,
+  Droplet,
 } from "lucide-react";
 
 const Navbar = ({
@@ -32,6 +33,11 @@ const Navbar = ({
       icon: HeartPulse,
     },
     { name: "Quality Education", section: "quality-education", icon: BookOpen },
+    {
+      name: "Clean Water and Sanitation",
+      section: "clean-water-and-sanitation",
+      icon: Droplet,
+    },
   ];
 
   return (
@@ -253,6 +259,16 @@ export default function HomeApp() {
                       bgColor: "bg-[#D9DD92]",
                       hoverColor: "hover:bg-[#D9DD92]/90",
                     },
+                    {
+                      sdg: "SDG 6",
+                      title: "Clean Water and Sanitation",
+                      description:
+                        "Ensuring availability and sustainable management of water and sanitation for all.",
+                      icon: <Droplet className="h-8 w-8 text-[#080F0F]" />,
+                      section: "clean-water-and-sanitation",
+                      bgColor: "bg-cyan-400",
+                      hoverColor: "hover:bg-cyan-400/90",
+                    },
                   ].map((module, index) => (
                     <div
                       key={module.title}
@@ -313,11 +329,11 @@ export default function HomeApp() {
             <div className="space-y-4">
               <div className="rounded-xl bg-[#FCEFF9] p-6">
                 <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
-                  E-Farming Platforms
+                  Food for All
                 </h5>
                 <p className="text-[#080F0F]/70">
-                  Digital tools that provide real-time weather data, soil
-                  analysis, and planting recommendations to farmers.
+                  Ensuring access to nutritious meals for every individual.
+                  Together, we work to eliminate hunger and food insecurity.
                 </p>
               </div>
               <div className="rounded-xl bg-[#FCEFF9] p-6">
@@ -331,17 +347,17 @@ export default function HomeApp() {
               </div>
               <div className="rounded-xl bg-[#FCEFF9] p-6">
                 <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
-                  Nutrition Tracking
+                  Donation and Fundraising
                 </h5>
                 <p className="text-[#080F0F]/70">
-                  Solutions for tracking nutritional intake and providing
-                  personalized dietary advice to communities.
+                  Support sustainable initiatives through secure donations and
+                  community fundraisers. Every contribution drives real change.
                 </p>
               </div>
             </div>
             <p className="mt-8 text-lg font-medium text-[#FA8334]">
-              By connecting technology with agriculture, we aim to build a world
-              where everyone has access to sufficient, nutritious food.
+              By connecting farmers, suppliers, and consumers through smart
+              platforms, we ensure food security and reduce wastage.
             </p>
             <div className="my-5 grid place-content-center">
               <div className="flex gap-2">
@@ -354,15 +370,15 @@ export default function HomeApp() {
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                   </button>
                 </Link>
-                              <Link href={"https://donate.ignithon.dashutosh.tech/"}>
-                <button
-                  className="px-6 py-3 bg-[#FA8334] text-white font-semibold rounded-2xl shadow-md 
+                <Link href={"https://donate.ignithon.dashutosh.tech/"}>
+                  <button
+                    className="px-6 py-3 bg-[#FA8334] text-white font-semibold rounded-2xl shadow-md 
                  hover:bg-[#d86c29] hover:scale-105 transition-transform duration-300 flex cursor-pointer"
-                >
-                  GO TO SOLUTION 2{" "}
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </button>
-              </Link>
+                  >
+                    GO TO SOLUTION 2{" "}
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </button>
+                </Link>
               </div>
             </div>
           </SdgDetail>
@@ -379,10 +395,13 @@ export default function HomeApp() {
               Our Approach
             </h3>
             <p className="mb-8 text-lg leading-relaxed">
-              This module is dedicated to creating accessible digital health
-              solutions that improve quality of life. We believe technology can
-              bridge the gap in healthcare access, from remote consultations to
-              public health data analysis.
+              This module is focused on building accessible digital health
+              solutions that enhance quality of life. By leveraging technology,
+              we bridge healthcare gaps—ranging from remote doctor consultations
+              to AI-driven mental health assessments. An intelligent chatbot
+              agent engages users with supportive conversations, helping them
+              evaluate their well-being while making healthcare more responsive
+              and inclusive.
             </p>
             <h4 className="mb-4 text-2xl font-bold text-[#FA8334]">
               Key Initiatives:
@@ -390,16 +409,17 @@ export default function HomeApp() {
             <div className="space-y-4">
               <div className="rounded-xl bg-[#FCEFF9] p-6">
                 <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
-                  Telemedicine Services
+                  MHQ Tests
                 </h5>
                 <p className="text-[#080F0F]/70">
-                  Platforms for remote doctor consultations, making healthcare
-                  available to rural and underserved populations.
+                  Digital platforms for mental health quotient (MHQ)
+                  assessments, enabling individuals to evaluate their
+                  psychological well-being and seek timely guidance.
                 </p>
               </div>
               <div className="rounded-xl bg-[#FCEFF9] p-6">
                 <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
-                  Mental Health Apps
+                  Mental Health Support
                 </h5>
                 <p className="text-[#080F0F]/70">
                   Digital tools that provide confidential support, resources,
@@ -408,7 +428,7 @@ export default function HomeApp() {
               </div>
               <div className="rounded-xl bg-[#FCEFF9] p-6">
                 <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
-                  Public Health Dashboards
+                  AI Assistance
                 </h5>
                 <p className="text-[#080F0F]/70">
                   Data visualization tools to track disease outbreaks and public
@@ -417,8 +437,8 @@ export default function HomeApp() {
               </div>
             </div>
             <p className="mt-8 text-lg font-medium text-[#FA8334]">
-              Our e-health solutions are designed to empower individuals and
-              communities to take control of their health and well-being.
+              By leveraging digital innovation, we make healthcare knowledge and
+              services more accessible, affordable, and inclusive.
             </p>
             <div className="my-5 grid place-content-center">
               <Link href={"https://mindpulse.ignithon.dashutosh.tech/"}>
@@ -457,7 +477,7 @@ export default function HomeApp() {
             <div className="space-y-4">
               <div className="rounded-xl bg-[#FCEFF9] p-6">
                 <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
-                  E-Learning Platforms
+                  E-Learning Platform
                 </h5>
                 <p className="text-[#080F0F]/70">
                   Interactive portals with a wide range of courses and modules
@@ -473,13 +493,83 @@ export default function HomeApp() {
                   communities, fostering a tech-savvy generation.
                 </p>
               </div>
-              <div className="rounded-xl bg-[#D9DD92]/30 p-6">
+              <div className="rounded-xl bg-[#FCEFF9] p-6">
                 <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
-                  Personalized Learning Paths
+                  AI Assistance
                 </h5>
                 <p className="text-[#080F0F]/70">
-                  AI-driven tools that adapt to a student&apos;s pace and style,
-                  offering a customized learning experience.
+                  Smart AI tools that guide learners in grasping complex
+                  concepts and answering their questions with ease.
+                </p>
+              </div>
+            </div>
+            <p className="mt-8 text-lg font-medium text-[#FA8334]">
+              By making learning engaging and interactive, we empower every
+              learner to unlock their full potential.
+            </p>
+            <div className="my-5 grid place-content-center">
+              <Link href={"https://daichianoopqualityeducation.vercel.app/"}>
+                <button
+                  className="px-6 py-3 bg-[#FA8334] text-white font-semibold rounded-2xl shadow-md 
+                 hover:bg-[#d86c29] hover:scale-105 transition-transform duration-300 flex cursor-pointer"
+                >
+                  GO TO SOLUTION{" "}
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </button>
+              </Link>
+            </div>
+          </SdgDetail>
+        );
+      case "clean-water-and-sanitation":
+        return (
+          <SdgDetail
+            title="SDG 9: Clean Water and Sanitation"
+            icon={<BookOpen className="h-12 w-12 text-[#080F0F]" />}
+            color="bg-cyan-400"
+            onNavigate={setActiveSection}
+          >
+            <h3 className="mb-6 text-3xl font-bold text-[#080F0F]">
+              Our Approach
+            </h3>
+            <p className="mb-8 text-lg leading-relaxed">
+              We are committed to ensuring universal access to clean water and
+              adequate sanitation through innovative digital solutions. This
+              module focuses on building platforms that support efficient water
+              management, grievance reporting, and sanitation awareness. By
+              leveraging data-driven insights and community participation, we
+              aim to make safe water and hygienic sanitation accessible to every
+              individual, regardless of their region or resources.
+            </p>
+            <h4 className="mb-4 text-2xl font-bold text-[#FA8334]">
+              Key Initiatives:
+            </h4>
+            <div className="space-y-4">
+              <div className="rounded-xl bg-[#FCEFF9] p-6">
+                <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
+                  Public Portal for all
+                </h5>
+                <p className="text-[#080F0F]/70">
+                  A public portal that enables users to easily submit grievances
+                  related to water and sanitation.
+                </p>
+              </div>
+              <div className="rounded-xl bg-[#FCEFF9] p-6">
+                <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
+                  Digital Records
+                </h5>
+                <p className="text-[#080F0F]/70">
+                  Empower users to upload and share images and documents that
+                  highlight real-world water and sanitation challenges{" "}
+                </p>
+              </div>
+              <div className="rounded-xl bg-[#FCEFF9] p-6">
+                <h5 className="mb-2 text-xl font-bold text-[#080F0F]">
+                  Available 24/7
+                </h5>
+                <p className="text-[#080F0F]/70">
+                  A reliable 100%-uptime database ensures that all grievances
+                  are securely stored and made accessible for future reference
+                  by the Municipal Corporation.
                 </p>
               </div>
             </div>
