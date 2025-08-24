@@ -488,7 +488,7 @@ export default function HomeApp() {
               the knowledge and skills they need to thrive.
             </p>
             <div className="my-5 grid place-content-center">
-              <Link href={"/SDG4"}>
+              <Link href={"https://daichianoopqualityeducation.vercel.app/"}>
                 <button
                   className="px-6 py-3 bg-[#FA8334] text-white font-semibold rounded-2xl shadow-md 
                  hover:bg-[#d86c29] hover:scale-105 transition-transform duration-300 flex cursor-pointer"
